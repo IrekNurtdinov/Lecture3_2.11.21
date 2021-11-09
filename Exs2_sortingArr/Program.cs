@@ -2,7 +2,7 @@
 
 int[] arr = {1,5,4,3,2,6,7,1,1};
 
-void PrintArray(int[] array)
+void PrintArray(int[] array)                   // made array printing method
 {
     int count = array.Length;
     for (int i = 0; i < count; i++)
@@ -14,7 +14,7 @@ Console.WriteLine();
 
 //PrintArray(arr);
 
-void SelectionSort(int[] array)
+void SelectionSort(int[] array)                       // made array sorting method
 {
     for (int i = 0; i < array.Length - 1; i++)
     {
@@ -24,9 +24,9 @@ void SelectionSort(int[] array)
           if (array[j] < array[minPosition]) minPosition = j; 
         }
 
-        int temporary = array[i];
-        array[i] = array[minPosition];
-        array[minPosition] = temporary;
+        int temporary = array[i];            //
+        array[i] = array[minPosition];       //  replace var
+        array[minPosition] = temporary;      //
     }
 }
 
